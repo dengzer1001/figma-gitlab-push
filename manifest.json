@@ -1,7 +1,11 @@
 {
-  "name": "icon-automation",
-  "id": "739395588962138807",
+  "name": "dz-gitlab-MR",
+  "id": "1096625605772984750",
   "api": "1.0.0",
   "main": "dist/code.js",
+  "editorType": [
+    "figma",
+    "figjam"
+  ],
   "ui": "dist/ui.html"
 }

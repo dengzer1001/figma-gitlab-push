@@ -70,7 +70,7 @@ export default class Settings extends React.Component<Props> {
           <input
             name="githubRepo"
             className="input"
-            placeholder="Github Repository URL"
+            placeholder="Gitlab Repository URL"
             onChange={this.handleChange}
             value={githubRepo}
           />
@@ -79,7 +79,7 @@ export default class Settings extends React.Component<Props> {
           <input
             name="githubToken"
             className="input"
-            placeholder="Github Token"
+            placeholder="Gitlab Token"
             onChange={this.handleChange}
             value={githubToken}
           />

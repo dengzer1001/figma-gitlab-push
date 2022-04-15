@@ -121,7 +121,7 @@ export default class Settings extends React.Component<Props> {
         version: '',
         message: '',
         isPushing: false,
-        resultTip: 'Pushing successfully! You can now go to Github and merge this PR. Then your icons will be published to NPM automatically.',
+        resultTip: 'Pushing successfully! You can now go to Gitlab and merge this PR. Then your icons will be published to NPM automatically.',
         prUrl: web_url
       })
 
@@ -198,18 +198,18 @@ export default class Settings extends React.Component<Props> {
             <div className="type type--pos-medium-normal help-tip">{messageTip}</div>
           }
         </div>
-        <Webhook
+        {/* <Webhook
           hidden={resultTip}
           onFilled={this.handleWebhookFilled}
           webhookData={webhookData}
-        />
+        /> */}
         <div className={'form-item '+(resultTip ? 'hide' : '')}>
           <button
             onClick={this.handleSubmit}
             className='button button--primary'
             style={{marginRight: '8px'}}
             disabled={isPushing}
-          >{isPushing ? 'pushing…' : 'push to Github'}</button>
+          >{isPushing ? 'pushing…' : 'push to Gitlab'}</button>
           {
             !isPushing &&
             <button onClick={this.onCancel} className='button button--secondary'>close</button>
